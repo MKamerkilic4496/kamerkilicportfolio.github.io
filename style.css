@@ -1,0 +1,12 @@
+/*   <!-- HEADER PART IS STARTING --> */
+.nav-link.active{
+    color:red !important;
+}
+/* HEADER PART FİNİSHED */
+
+
+@media screen and (max-width:768px){
+  section#home{
+    background-size:100% 100%;
+  }
+}
