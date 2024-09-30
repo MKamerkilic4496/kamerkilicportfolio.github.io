@@ -27,6 +27,7 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          id="navbarCollapse"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -432,5 +433,16 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      function menuSelect(){
+        if(document.getElementById("navbarNav").style.display=='block'){
+          document.getElementById("navbarNav").style.display ='none';
+        }
+        else{
+          document.getElementById("navbarNav").style.display='block';
+        }
+      }
+      document.getElementById("navbarCollapse").addEventListener('click',menuSelect);
+  </script>
   </body>
 </html>
